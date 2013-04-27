@@ -1,0 +1,78 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+*/
+
+@import "config";
+
+html {
+	overflow-y: scroll;
+}
+
+body{	
+	background: $bgColor;
+	font-family: $fontFamilyBase;
+	font-style: normal;
+	font-weight: 300;
+}
+
+a {
+  color: $baseLink;
+  font-style: italic;
+  &:hover {
+    color: $baseLinkHover;
+   }
+}
+
+p {
+	font-size: 1.6em;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-family: $fontFamilyAlt;
+	margin: 0 0;
+	font-weight: 600;
+}
+h2 {
+	font-size: 1em;
+	margin: 0 0;
+	font-weight: 300;
+}
+
+textarea, input {
+	outline: none;
+    border: 1px solid $hrColor;
+    color: $hrColor;
+    @include input-placeholder($hrColor);
+	&:focus{
+    	outline: none;
+    	border: 1px solid $darkGrey;
+    	color: $darkGrey;
+    	@include input-placeholder($darkGrey);
+	}	
+}
+
+.container {
+	width: $containerBase;
+	margin: auto;
+	@media screen and (max-width: $breakBase) {
+    	width: 98%;
+    	margin-left: 1%;
+		margin-right: 1%;
+  	}	
+}
+
+
+header {
+	
+}
+
+
+footer {
+	
+}
+    
+    

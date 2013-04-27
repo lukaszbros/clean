@@ -1,0 +1,30 @@
+
+$bgColor: #ffffff;
+$hrColor: #cccccc;
+$baseLink: #000000;
+$baseLinkHover: #333333;
+$baseGrey: #333333;
+$darkGrey: #666666;
+
+$containerBase: 1128px;
+$breakBase: 1128px;
+$breakContact: 1000px;
+$breakContactForm: 500px;
+$breakBaseMenu: 700px;
+$breakBaseWork: 700px;
+$breakLogo: 400px;
+
+$fontFamilyBase: "proxima-nova",sans-serif;
+$fontFamilyAlt: "sans-serif";
+
+@mixin input-placeholder($color) {
+      &.placeholder {
+        color: $color; 
+        }
+      &:-moz-placeholder {
+        color: $color; 
+        }
+      &::-webkit-input-placeholder {
+        color: $color; 
+        } 
+    }

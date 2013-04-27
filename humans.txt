@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Klaudyna Dudzik - Business Development
+    Maciek Butcher - UX Design
+	Lukasz Bros	- Coding - @lukaszbros
+	Michal Augustynek - Busines Analysis
+
+# THANKS
+
+    Vincent Vergonjeanne
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr

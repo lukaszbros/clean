@@ -1,0 +1,526 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 19, ../sass/main.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #333333;
+}
+
+/* line 23, ../sass/main.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 34, ../sass/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 39, ../sass/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 48, ../sass/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 3em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 61, ../sass/main.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 69, ../sass/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 79, ../sass/main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 87, ../sass/main.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'AmaticSCRegular';
+  src: url("AmaticSC-Regular-webfont.eot");
+  src: url("AmaticSC-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("AmaticSC-Regular-webfont.woff") format("woff"), url("AmaticSC-Regular-webfont.ttf") format("truetype"), url("AmaticSC-Regular-webfont.svg#AmaticSCRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmaticBold';
+  src: url("Amatic-Bold-webfont.eot");
+  src: url("Amatic-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("Amatic-Bold-webfont.woff") format("woff"), url("Amatic-Bold-webfont.ttf") format("truetype"), url("Amatic-Bold-webfont.svg#AmaticBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 114, buttons/*.png */
+.buttons-sprite, .buttons-apps_store, .buttons-apps_store_hoover, .buttons-contact_us, .buttons-contact_us_hoover, .buttons-facebook, .buttons-facebook_hoover, .buttons-google, .buttons-google_hoover, .buttons-job, .buttons-job_hoover {
+  background: url('/tribity2/img/buttons-sf9c2406299.png') no-repeat;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-apps_store {
+  background-position: 0 -162px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-apps_store_hoover {
+  background-position: 0 -324px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-contact_us {
+  background-position: 0 -591px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-contact_us_hoover {
+  background-position: 0 -801px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-facebook {
+  background-position: 0 -243px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-facebook_hoover {
+  background-position: 0 -405px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-google {
+  background-position: 0 0;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-google_hoover {
+  background-position: 0 -81px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-job {
+  background-position: 0 -486px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons-job_hoover {
+  background-position: 0 -696px;
+}
+
+/* line 114, buttons_mobile/*.png */
+.buttons_mobile-sprite, .buttons_mobile-apps_store, .buttons_mobile-apps_store_hoover, .buttons_mobile-contact_us, .buttons_mobile-contact_us_hoover, .buttons_mobile-facebook, .buttons_mobile-facebook_hoover, .buttons_mobile-google, .buttons_mobile-google_hoover, .buttons_mobile-job, .buttons_mobile-job_hoover {
+  background: url('/tribity2/img/buttons_mobile-s9e9523e8e5.png') no-repeat;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-apps_store {
+  background-position: 0 -306px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-apps_store_hoover {
+  background-position: 0 -459px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-contact_us {
+  background-position: 0 -918px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-contact_us_hoover {
+  background-position: 0 -1488px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-facebook {
+  background-position: 0 -612px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-facebook_hoover {
+  background-position: 0 -765px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-google {
+  background-position: 0 0;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-google_hoover {
+  background-position: 0 -153px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-job {
+  background-position: 0 -1298px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.buttons_mobile-job_hoover {
+  background-position: 0 -1108px;
+}
+
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+*/
+/* line 10, ../sass/common.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 14, ../sass/common.scss */
+body {
+  background: white;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* line 21, ../sass/common.scss */
+a {
+  color: black;
+  font-style: italic;
+}
+/* line 24, ../sass/common.scss */
+a:hover {
+  color: #333333;
+}
+
+/* line 29, ../sass/common.scss */
+p {
+  font-size: 1.6em;
+}
+
+/* line 33, ../sass/common.scss */
+h1 {
+  font-size: 1.5em;
+  font-family: "AmaticSCRegular", "sans-serif";
+  margin: 0 0;
+  font-weight: 600;
+}
+
+/* line 39, ../sass/common.scss */
+h2 {
+  font-size: 1em;
+  margin: 0 0;
+  font-weight: 300;
+}
+
+/* line 45, ../sass/common.scss */
+textarea, input {
+  outline: none;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+}
+/* line 21, ../sass/config.scss */
+textarea.placeholder, input.placeholder {
+  color: #cccccc;
+}
+/* line 24, ../sass/config.scss */
+textarea:-moz-placeholder, input:-moz-placeholder {
+  color: #cccccc;
+}
+/* line 27, ../sass/config.scss */
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+/* line 50, ../sass/common.scss */
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #666666;
+  color: #666666;
+}
+/* line 21, ../sass/config.scss */
+textarea:focus.placeholder, input:focus.placeholder {
+  color: #666666;
+}
+/* line 24, ../sass/config.scss */
+textarea:focus:-moz-placeholder, input:focus:-moz-placeholder {
+  color: #666666;
+}
+/* line 27, ../sass/config.scss */
+textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+  color: #666666;
+}
+
+/* line 58, ../sass/common.scss */
+.container {
+  width: 1128px;
+  margin: auto;
+}
+@media screen and (max-width: 1128px) {
+  /* line 58, ../sass/common.scss */
+  .container {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+/*
+  Welcome to Compass. Use this file to define print styles.
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+*/
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 145, ../sass/main.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 153, ../sass/main.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 164, ../sass/main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 173, ../sass/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 190, ../sass/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 203, ../sass/main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 220, ../sass/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 225, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 234, ../sass/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 261, ../sass/main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 269, ../sass/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 273, ../sass/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 277, ../sass/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 287, ../sass/main.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 292, ../sass/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 297, ../sass/main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 302, ../sass/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 306, ../sass/main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 316, ../sass/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 322, ../sass/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

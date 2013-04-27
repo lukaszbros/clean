@@ -1,0 +1,99 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+*/
+/* line 10, ../sass/common.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 14, ../sass/common.scss */
+body {
+  background: white;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* line 21, ../sass/common.scss */
+a {
+  color: black;
+  font-style: italic;
+}
+/* line 24, ../sass/common.scss */
+a:hover {
+  color: #333333;
+}
+
+/* line 29, ../sass/common.scss */
+p {
+  font-size: 1.6em;
+}
+
+/* line 33, ../sass/common.scss */
+h1 {
+  font-size: 1.5em;
+  font-family: "AmaticSCRegular", "sans-serif";
+  margin: 0 0;
+  font-weight: 600;
+}
+
+/* line 39, ../sass/common.scss */
+h2 {
+  font-size: 1em;
+  margin: 0 0;
+  font-weight: 300;
+}
+
+/* line 45, ../sass/common.scss */
+textarea, input {
+  outline: none;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+}
+/* line 21, ../sass/config.scss */
+textarea.placeholder, input.placeholder {
+  color: #cccccc;
+}
+/* line 24, ../sass/config.scss */
+textarea:-moz-placeholder, input:-moz-placeholder {
+  color: #cccccc;
+}
+/* line 27, ../sass/config.scss */
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+/* line 50, ../sass/common.scss */
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #666666;
+  color: #666666;
+}
+/* line 21, ../sass/config.scss */
+textarea:focus.placeholder, input:focus.placeholder {
+  color: #666666;
+}
+/* line 24, ../sass/config.scss */
+textarea:focus:-moz-placeholder, input:focus:-moz-placeholder {
+  color: #666666;
+}
+/* line 27, ../sass/config.scss */
+textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+  color: #666666;
+}
+
+/* line 58, ../sass/common.scss */
+.container {
+  width: 1128px;
+  margin: auto;
+}
+@media screen and (max-width: 1128px) {
+  /* line 58, ../sass/common.scss */
+  .container {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
